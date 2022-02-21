@@ -1,0 +1,7 @@
+{
+  "recommendations": ["johnsoncodehk.volar", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint","digitalbrainstem.javascript-ejs-support"],
+  "unwantedRecommendations": [
+    // 此插件和 volar 冲突，需要在此项目关闭
+    "vscode.typescript-language-features"
+  ]
+}

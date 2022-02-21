@@ -1,0 +1,46 @@
+{
+  "name": "op-wiki-plus",
+  "version": "1.0.0",
+  "description": "op-wiki-plus",
+  "keywords": [
+    "op"
+  ],
+  "author": "lisonge",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "^14.18.12",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "@vitejs/plugin-vue": "^2.2.2",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "postcss": "^8.4.6",
+    "postcss-preset-env": "^7.4.1",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.8",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.4",
+    "vite-plugin-banner": "^0.2.0",
+    "vue-tsc": "^0.31.4"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || ^16.0.0"
+  }
+}
