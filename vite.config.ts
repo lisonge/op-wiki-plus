@@ -14,7 +14,7 @@ export default defineConfig({
         author: 'lisonge',
         name: '原神Wiki辅助工具',
         namespace: 'https://dev.songe.li',
-        version: '1.0.0',
+        version: '1.0.1',
         icon: 'https://dev.songe.li/favicon.svg',
         description: '原神 Wiki 辅助工具, 1.显示/隐藏已完成成就',
         include: ['https://wiki.biligame.com/ys/*'],
