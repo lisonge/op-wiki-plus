@@ -12,7 +12,7 @@ export default defineConfig({
       userscript: {
         monkey: 'tamper',
         author: 'lisonge',
-        name: 'op-wiki-plus',
+        name: '原神Wiki辅助工具',
         namespace: 'https://dev.songe.li',
         version: '1.0.0',
         icon: 'https://dev.songe.li/favicon.svg',
