@@ -10,27 +10,21 @@ export default defineConfig({
     monkeyPlugin({
       entry: 'src/main.ts',
       userscript: {
-        monkey: 'tamper',
-        author: 'lisonge',
         name: '原神Wiki辅助工具',
         namespace: 'https://dev.songe.li',
-        version: '1.0.1',
         icon: 'https://dev.songe.li/favicon.svg',
         description: '原神 Wiki 辅助工具, 1.显示/隐藏已完成成就',
+        updateURL:
+          'https://cdn.jsdelivr.net/gh/lisonge/op-wiki-plus@main/dist/op-wiki-plus.user.js',
+        supportURL: 'https://github.com/lisonge/op-wiki-plus/issues',
         include: ['https://wiki.biligame.com/ys/*'],
-        extra: [['license', 'MIT']],
-      },
-      format: {
-        align: 2,
-      },
-      server: {
-        prefix: 'dev:',
       },
       build: {
         externalGlobals: {
           vue: [
             'Vue',
-            'https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js',
+            (version) =>
+              `https://cdn.jsdelivr.net/npm/vue@${version}/dist/vue.global.prod.js`,
           ],
         },
       },

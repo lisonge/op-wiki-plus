@@ -4,10 +4,14 @@
 // @version      1.0.1
 // @author       lisonge
 // @description  原神 Wiki 辅助工具, 1.显示/隐藏已完成成就
+// @license      MIT
 // @icon         https://dev.songe.li/favicon.svg
+// @homepage     https://github.com/lisonge/op-wiki-plus#readme
+// @homepageURL  https://github.com/lisonge/op-wiki-plus#readme
+// @supportURL   https://github.com/lisonge/op-wiki-plus/issues
+// @updateURL    https://cdn.jsdelivr.net/gh/lisonge/op-wiki-plus@main/dist/op-wiki-plus.user.js
 // @include      https://wiki.biligame.com/ys/*
 // @require      https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js
-// @license      MIT
 // ==/UserScript==
 
 (({ cssTextList = [] }) => {
