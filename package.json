@@ -1,6 +1,6 @@
 {
   "name": "op-wiki-plus",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "op-wiki-plus",
   "keywords": [
     "op"
@@ -20,6 +20,8 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
+    "naive-ui": "^2.26.3",
     "vue": "^3.2.31"
   },
   "devDependencies": {
