@@ -1,44 +1,33 @@
 <script setup lang="ts">
-const switchShowStatus = (show = true) => {
-  const display = show ? 'block' : 'none';
-  const catelogList = document.querySelectorAll<HTMLSpanElement>(
-    '#toc > ul  a > span.toctext.checked'
-  );
-  catelogList.forEach((el) => {
-    const target = el.parentElement?.parentElement;
-    if (target) {
-      target.style.display = display;
-    }
-  });
-  const mainbodyList = document.querySelectorAll<HTMLElement>(
-    `#mw-content-text div.bwiki-collection.checked`
-  );
-  if (mainbodyList.length > 0) {
-    const realList = Array.from(
-      mainbodyList[0].parentElement?.children ?? []
-    ) as HTMLElement[];
-    mainbodyList.forEach((el) => {
-      const index = realList.indexOf(el);
-      el.style.display = display;
-      if (index >= 0) {
-        for (let i = index + 1; i < realList.length; i++) {
-          const child = realList[i];
-          if (!child.classList.contains('bwiki-collection')) {
-            child.style.display = display;
-          } else {
-            break;
-          }
-        }
-      }
-    });
-  }
-};
+import { NSwitch } from 'naive-ui';
+import { onUnmounted } from 'vue';
+import { globalConfig } from './storage';
+import { setAchievementVisibility } from './util';
+
+// const active = ref(false);
+let task: number | undefined = window.setInterval(() => {
+  setAchievementVisibility(!globalConfig.achievementVisibility);
+}, 1000);
+
+onUnmounted(() => {
+  window.clearInterval(task);
+});
 </script>
 
 <template>
   <div class="root-1fdb449b">
-    <div @click="switchShowStatus(true)">显示已完成成就</div>
-    <div @click="switchShowStatus(false)">隐藏已完成成就</div>
+    <div class="title">原神Wiki辅助工具</div>
+    <NSwitch v-model:value="globalConfig.achievementVisibility">
+      <template #checked> 已完成成就-隐藏中 </template>
+      <template #unchecked> 已完成成就-显示中 </template>
+    </NSwitch>
+    <div>
+      更多功能请在
+      <a href="https://github.com/lisonge/op-wiki-plus/issues" target="_blank">
+        issues
+      </a>
+      提出
+    </div>
   </div>
 </template>
 
@@ -52,9 +41,9 @@ const switchShowStatus = (show = true) => {
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  & > div {
-    background-color: darkgrey;
-    cursor: pointer;
+  padding: 10px;
+  align-items: flex-start;
+  & > * {
     margin-bottom: 10px;
     &:last-child {
       margin-bottom: 0;
