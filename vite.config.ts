@@ -26,6 +26,11 @@ export default defineConfig({
             (version) =>
               `https://cdn.jsdelivr.net/npm/vue@${version}/dist/vue.global.prod.js`,
           ],
+          lodash: [
+            '_',
+            (version) =>
+              `https://cdn.jsdelivr.net/npm/lodash@${version}/lodash.min.js`,
+          ],
         },
       },
     }),
