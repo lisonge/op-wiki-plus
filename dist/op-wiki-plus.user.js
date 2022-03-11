@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         原神Wiki辅助工具
 // @namespace    https://dev.songe.li
-// @version      1.1.0
+// @version      1.1.1
 // @author       lisonge
 // @description  原神 Wiki 辅助工具, 1.显示/隐藏已完成成就
 // @license      MIT
@@ -2457,7 +2457,7 @@ ${style2}
   const defaultConfig = {
     achievementVisibility: true
   };
-  const globalConfig = vue.reactive(lodash.merge(JSON.parse((_a = localStorage.getItem(key)) != null ? _a : "{}"), defaultConfig));
+  const globalConfig = vue.reactive(lodash.merge(defaultConfig, JSON.parse((_a = localStorage.getItem(key)) != null ? _a : "{}")));
   vue.watch(() => globalConfig, (newValue) => {
     localStorage.setItem(key, JSON.stringify(newValue));
   }, { deep: true });
