@@ -12,7 +12,7 @@ const defaultConfig: GlobalConfig = {
 };
 
 export const globalConfig = reactive<GlobalConfig>(
-  merge(JSON.parse(localStorage.getItem(key) ?? '{}'), defaultConfig)
+  merge(defaultConfig, JSON.parse(localStorage.getItem(key) ?? '{}'))
 );
 
 watch(
