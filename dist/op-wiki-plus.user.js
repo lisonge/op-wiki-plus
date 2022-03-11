@@ -8,6 +8,7 @@
 // @icon         https://dev.songe.li/favicon.svg
 // @homepage     https://github.com/lisonge/op-wiki-plus#readme
 // @homepageURL  https://github.com/lisonge/op-wiki-plus#readme
+// @source       https://github.com/lisonge/op-wiki-plus.git
 // @supportURL   https://github.com/lisonge/op-wiki-plus/issues
 // @updateURL    https://cdn.jsdelivr.net/gh/lisonge/op-wiki-plus@main/dist/op-wiki-plus.user.js
 // @include      https://wiki.biligame.com/ys/*

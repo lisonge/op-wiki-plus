@@ -22,7 +22,7 @@ specifiers:
   typescript: ^4.6.2
   vite: ^2.8.6
   vite-plugin-banner: ^0.2.0
-  vite-plugin-monkey: ^0.2.5
+  vite-plugin-monkey: ^0.2.6
   vue: ^3.2.31
   vue-tsc: ^0.32.1
 
@@ -51,7 +51,7 @@ devDependencies:
   typescript: 4.6.2
   vite: 2.8.6_sass@1.49.9
   vite-plugin-banner: 0.2.0
-  vite-plugin-monkey: 0.2.5_vite@2.8.6
+  vite-plugin-monkey: 0.2.6_vite@2.8.6
   vue-tsc: 0.32.1_typescript@4.6.2
 
 packages:
@@ -3649,8 +3649,8 @@ packages:
     resolution: {integrity: sha512-IBRYVK6v92ihchBYxl6yhT57hr2cRnSX4RX6CJp84vNeWAg/Hht4B5Ywe0jwKA26Kkx/Yx4SGbMp8YLvAqm2pg==}
     dev: true
 
-  /vite-plugin-monkey/0.2.5_vite@2.8.6:
-    resolution: {integrity: sha512-6bNj+A2ZCFS3q3cnptv/Fj8I+5JOZANN/xTh08LTxSy+IE8wTGULn+74R7PnrNFtDt4YHCoLbghzSTX9fQZVxg==}
+  /vite-plugin-monkey/0.2.6_vite@2.8.6:
+    resolution: {integrity: sha512-f9aHGW+LbFVDVxbfrfI2yGus4ueEBmJ71FbOc9TCmTsLchcdBs86qJ5nnOzIQgHMELuqxcHnaBhogtjHBBCU5A==}
     engines: {node: ^14.13.1 || >= 16, pnpm: ^6.0.0}
     requiresBuild: true
     peerDependencies:

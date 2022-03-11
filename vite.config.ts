@@ -16,7 +16,6 @@ export default defineConfig({
         description: '原神 Wiki 辅助工具, 1.显示/隐藏已完成成就',
         updateURL:
           'https://cdn.jsdelivr.net/gh/lisonge/op-wiki-plus@main/dist/op-wiki-plus.user.js',
-        supportURL: 'https://github.com/lisonge/op-wiki-plus/issues',
         include: ['https://wiki.biligame.com/ys/*'],
       },
       build: {
